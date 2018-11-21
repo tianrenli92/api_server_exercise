@@ -12,7 +12,7 @@ ____ = 'undefined'
 def student_list(request):
     # two functions: GET the list of all students, or POST a new student
     if request.method == 'GET':
-        # get all objects from Student, then serialize them into a json string
+        # get all instances from Student, then serialize them into a json string
         data = serializers.serialize(____, Student.____)
         return HttpResponse(____, content_type=____)
     elif request.method == 'POST':

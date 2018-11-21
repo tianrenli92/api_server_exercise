@@ -78,7 +78,7 @@ YEAR_CHOICES = (
 
 
 class Student(models.Model):
-    # create local constants the same as the globals
+    # create class-level constants the same as the global constants
     COLLEGE_CHOICES = COLLEGE_CHOICES
     YEAR_CHOICES = YEAR_CHOICES
 
